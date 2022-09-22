@@ -6,12 +6,19 @@ metadata:
     name: web
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-type: nlb
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:elasticloadbalancing:ap-northeast-1:644421735833:loadbalancer/net/a7a20e98caa4d4d2a9436c7621c188d0/650389aca0254341
+    external-dns.alpha.kubernetes.io/hostname: cat.bitvleotest.com
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: https
+spec:
 spec:
   type: LoadBalancer
   ports:
   - name: http
     port: 80
+    targetPort: 8000
+  - name: https
+    port: 443
     targetPort: 8000
   selector:
     app: web
