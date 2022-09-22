@@ -1,7 +1,7 @@
-FROM node:16
+FROM node:14-alpine
 WORKDIR /usr/scr/app
-COPY package*.json .
+COPY package.json .
 RUN npm install
 COPY . .
-EXPOSE 8800
+EXPOSE 443 80
 CMD [ "npm", "run", "start" ]
