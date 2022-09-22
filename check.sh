@@ -1,3 +1,3 @@
 #!/bin/sh
 
-kubectl get all -n test-taeeun-cat-test
+kubectl get all -n taeeun-cat-test
