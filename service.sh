@@ -1,4 +1,4 @@
 #!/bin/sh
 
-kubectl delete -f deploy-testbitvelo.yaml -n taeeun-cat-test
-kubectl apply -f deploy-testbitvelo.yaml -n taeeun-cat-test
+kubectl delete -f web-test-svc.yaml -n taeeun-cat-test
+kubectl apply -f web-test-svc.yaml -n taeeun-cat-test
