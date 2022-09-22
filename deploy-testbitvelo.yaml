@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: web
-        image: registry-1.docker.io/kimtaeeun-test:test01
+        image: registry-1.docker.io/kimtaeeun/taeeun-test:test01
         imagePullPolicy: Always
         ports:
         - containerPort: 4443
