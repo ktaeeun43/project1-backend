@@ -3,5 +3,5 @@ WORKDIR /usr/src/app
 COPY package.json .
 RUN npm install
 COPY . .
-EXPOSE 443 80
+EXPOSE 443 8000
 CMD [ "npm", "run", "start" ]
