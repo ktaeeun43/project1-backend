@@ -17,5 +17,8 @@ spec:
   - name: http
     port: 80
     targetPort: 8000
+  - name: https
+    port: 433
+    targetPort: 8000
   selector:
     app: web
