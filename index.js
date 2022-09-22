@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
-app.set('port', process.env.PORT || 8080);
+app.set("port", process.env.PORT || 8800);
 
-app.get('/', (req, res) => {
-	res.send("Hello Exress");
+app.get("/", (req, res) => {
+  res.send("Hello Taeeun Docker~~~");
 });
 
-app.listen(app.get('port'),()=>{
-	console.log(app.get('port'),"Connected.");
+app.listen(app.get("port"), () => {
+  console.log(app.get("port"), "Connected.");
 });
