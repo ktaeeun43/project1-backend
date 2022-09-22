@@ -6,7 +6,7 @@ metadata:
     name: web
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-type: nlb
-    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:ap-northeast-1:644421735833:certificate/5c939d2f-f997-4304-941b-53affafd6eb6
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:ap-northeast-2:644421735833:certificate/cbfed9f8-42f5-4eae-aa28-8a3fca1d0632
     external-dns.alpha.kubernetes.io/hostname: cat.bitvleotest.com
     service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
     service.beta.kubernetes.io/aws-load-balancer-ssl-ports: https
